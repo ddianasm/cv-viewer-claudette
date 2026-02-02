@@ -1,0 +1,24 @@
+@use '@/styles/variables' as *;
+
+.cv-section {
+  margin-bottom: 18px;
+
+  &__title {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    border-bottom: 1.5px solid #000;
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+    letter-spacing: 0.8px;
+  }
+
+  &__content {
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #333;
+    text-align: justify;
+  }
+}
