@@ -1,0 +1,21 @@
+@use 'variables' as *;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.cv-container {
+  width: $a4-width;
+  min-height: $a4-height;
+  background-color: $white;
+  box-shadow: $shadow;
+  padding: 20mm;
+  box-sizing: border-box;
+}

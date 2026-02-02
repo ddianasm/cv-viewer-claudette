@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div>
+    <div className="cv-container">
       <h1>CV Project</h1>
     </div>
   );
