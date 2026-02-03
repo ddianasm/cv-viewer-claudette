@@ -6,10 +6,19 @@
   &__main-row {
     display: flex;
     gap: 15px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 4px;
+    }
   }
 
   &__left-col {
     min-width: 85px;
+
+    @media (max-width: 600px) {
+      min-width: auto;
+    }
   }
 
   &__date {
@@ -70,10 +79,21 @@
   line-height: 1.4;
   color: $secondary-color;
 
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+
   .skills-label {
     min-width: 95px;   
     color: $secondary-color;
     flex-shrink: 0;
+
+    @media (max-width: 600px) {
+      min-width: auto;
+      margin-bottom: 2px;
+      font-weight: 700;
+    }
   }
 
   .skills-value {

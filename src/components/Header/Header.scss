@@ -18,8 +18,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap; 
-    gap: 5px; 
+    flex-wrap: wrap;
+    gap: 5px;
+
+      @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 3px;
+    }
     
     & > span, & > a {
       white-space: nowrap;
@@ -38,5 +43,9 @@
   &__separator {
     color: #ccc;
     padding: 0 2px;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 }

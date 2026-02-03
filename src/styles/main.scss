@@ -7,15 +7,23 @@ body {
   font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  
+  @media (min-width: 768px) {
+    padding: 40px 0;
+  }
 }
 
 .cv-container {
-  width: $a4-width;
-  min-height: $a4-height;
-  background-color: $white;
+  width: 100%;
+    background-color: $white;
   box-shadow: $shadow;
-  padding: 10mm;
   box-sizing: border-box;
+  word-wrap: break-word; 
+  padding: 20px;
+
+  @media (min-width: 768px) {
+    width: $a4-width;
+    min-height: $a4-height;
+    padding: 10mm;
+  }
 }
