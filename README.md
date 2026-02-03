@@ -2,7 +2,7 @@
 
 An interactive resume with a review system.
 
-## [Live Demo](cv-viewer-claudette.vercel.app)
+## [Live Demo](https://cv-viewer-claudette.vercel.app/)
 
 ## Key Features
 
