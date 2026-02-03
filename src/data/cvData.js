@@ -1,4 +1,14 @@
 export const cvData = {
+  personal: {
+    name: "Claudette Lening",
+    location: "CareerOS Academy - Barcelona, Spain",
+    email: "claudette.lening@cosacademy.edu",
+    phone: "+34 612 345 678",
+    linkedin: {
+      url: "https://linkedin.com/in/claudette-lening",
+      label: "linkedin.com/in/claudette-lening",
+    },
+  },
   experience: [
     {
       date: "10.24 - 02.25",

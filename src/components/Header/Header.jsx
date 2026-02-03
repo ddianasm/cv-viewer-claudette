@@ -1,31 +1,33 @@
 import "@/components/Header/Header.scss";
+import { cvData } from "@/data/cvData";
 
 const Header = () => {
+  const { personal } = cvData;
+
   return (
     <header className="cv-header">
-      <h1 className="cv-header__name">Claudette Lening</h1>
-
+      <h1 className="cv-header__name">{personal.name}</h1>
       <div className="cv-header__contacts">
-        <span>CareerOS Academy - Barcelona, Spain</span>
+        <span>{personal.location}</span>
+        <span className="cv-header__separator">|</span>
+        <a href={`mailto:${personal.email}`} className="cv-header__link">
+          {personal.email}
+        </a>
         <span className="cv-header__separator">|</span>
         <a
-          href="mailto:claudette.lening@cosacademy.edu"
+          href={`tel:${personal.phone.replace(/\s/g, "")}`}
           className="cv-header__link"
         >
-          claudette.lening@cosacademy.edu
-        </a>
-        <span className="cv-header__separator">|</span>
-        <a href="tel:+34612345678" className="cv-header__link">
-          +34 612 345 678
+          {personal.phone}
         </a>
         <span className="cv-header__separator">|</span>
         <a
-          href="https://linkedin.com/in/claudette-lening"
+          href={personal.linkedin.url}
           target="_blank"
           rel="noreferrer"
           className="cv-header__link"
         >
-          linkedin.com/in/claudette-lening
+          {personal.linkedin.label}
         </a>
       </div>
     </header>

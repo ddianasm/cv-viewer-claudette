@@ -5,17 +5,36 @@ body {
   padding: 0;
   background-color: $bg-color;
   font-family: 'Inter', sans-serif;
+}
+
+.app-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+  width: 100%;
   display: flex;
   justify-content: center;
-  
+  padding: 20px;
+  box-sizing: border-box;
+
   @media (min-width: 768px) {
     padding: 40px 0;
+  }
+
+  @media (min-width: 1500px) {
+    padding-right: 320px; 
   }
 }
 
 .cv-container {
   width: 100%;
-    background-color: $white;
+  max-width: $a4-width;
+  background-color: $white;
   box-shadow: $shadow;
   box-sizing: border-box;
   word-wrap: break-word; 
